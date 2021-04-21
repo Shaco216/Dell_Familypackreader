@@ -2,3 +2,5 @@ Dell_Familypacks_Driver_Compare.pyw erstellt in dem abgelegten Ort eine TXT mit 
 version und datum.
 
 scrapeII.py ist die originaldatei
+
+python interpreter 3.8.6
