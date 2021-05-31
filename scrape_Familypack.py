@@ -17,7 +17,8 @@ zuordnungMod2Driv = {
     '7390 2-1' : 'win10_latitudee10',
     '7390 2in1' : 'win10_latitudee10',
     '5591' : 'win10_latitudee10cfl',
-    '7300' : 'win10_latitudee11whl2'
+    '7300' : 'win10_latitudee11whl2',
+    '7285' : 'win10_latitudee9tablet'
     }
 
 zuordnungDriv2Mod = {
@@ -25,7 +26,8 @@ zuordnungDriv2Mod = {
     'win10_latitudee9' : ['5580', '7280'],
     'win10_latitudee10' : ['5590', '7390', '7390 2-1'],
     'win10_latitudee10cfl' : '5591',
-    'win10_latitudee11whl2' : '7300'
+    'win10_latitudee11whl2' : '7300',
+    'win10_latitudee9tablet' : '7285'
 }
 
 
@@ -38,7 +40,7 @@ def get_linklist():
     return linklist
 
 def sort_relevant_information(linklist):
-    Latitudes = ["5500", "5400", "5300", "5300 2-1", "5580", "5590", "5591", "7280", "7300", "7390", "7390 2-1"]
+    Latitudes = ["5500", "5400", "5300", "5300 2-1", "5580", "5590", "5591", "7280", "7285", "7300", "7390", "7390 2-1"]
 
     for computer in Latitudes:
         Modell = str(computer)
@@ -109,5 +111,6 @@ def convert_list_into_txt(Short_Versions):
         writer.writelines('\n')
 get_linklist()
 sort_relevant_information(linklist)
+
 
 
